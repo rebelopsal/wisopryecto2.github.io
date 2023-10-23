@@ -375,7 +375,6 @@ textarea:hover {
     position: relative;
     min-width: 8.23em;
     text-decoration: none;
-    font-family: var(--font);
     font-size: 1.25rem;
 }
 .boton::before,
@@ -446,6 +445,24 @@ textarea:hover {
   .parrafo::before {
     content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
     color: darkgoldenrod;
+  }
+}
+@media screen and (max-width:1180px){
+  .parrafo {
+    right: 50%;
+    text-align:center;
+  }
+  .parrafo::after {
+    content: "~~~~~~~~~~~~~~~~~~~~~~";
+    color: darkgoldenrod;
+  }
+  
+  .parrafo::before {
+    content: "~~~~~~~~~~~~~~~~~~~~~~";
+    color: darkgoldenrod;
+  }
+  .contenedor-separador__final{
+    margin-top:-15%;
   }
 }
 
@@ -533,10 +550,10 @@ textarea:hover {
 }
 @media  screen and (max-width:800px){
   .object{
-    top:42%;
+    top:52%;
   }
   .contenedor-separador__final{
-    margin-top:70%;
+    margin-top:40%;
   }
 }
 @media all and (max-width: 670px) {
@@ -655,6 +672,13 @@ textarea:hover {
 }
 
 @media screen and (max-width:414px){
+  .subtitulo{
+    right: 30px;
+  }
+  .parrafo-informacion{
+    width: 80%;
+    min-width: 80%;
+  }
   .contenedor-separador__2{
     padding-bottom: 5px;
   }
@@ -672,18 +696,69 @@ textarea:hover {
     margin-top: 20px;
   }
   .object{
-    top: 32%;
+    top: 39%;
   }
   .object img{
     width: 15%;
   }
   .contenedor-separador__final{
-    margin-top:30%;
+    margin-top:20%;
+  }
+  .boton-enviar{
+    margin-top:-50%;
+  }
+  .boton{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:393px){
+  .object{
+    top: 37%;
+  }
+  .contenedor-separador__final{
+    margin-top:50%;
+  }
+}
+@media screen and (max-width:390px){
+  .object{
+    top: 43%;
+  }
+  .subtitulo{
+    right: 35px;
+  }
+  .boton-enviar{
+    bottom:60%
+  }
+  .contenedor-separador__final{
+    margin-top:25%;
   }
 }
 @media screen and (max-width:360px) {
+  .object{
+    width: 15%;
+    top:36%;
+  }
   .button{
     width: 40%;
   }
-  
+  .contenedor-contactanos{
+    max-height: 50%;
+    min-height:50%;
+    margin-bottom: 30px;
+
+  }
+  .contenedor-separador__final{
+    margin-top:40%;
+  }
+}
+@media  screen and (max-width: 320px){
+  .object{
+    top: 49%;
+  }
+  .boton-enviar{
+    margin-top: -80%;
+  }
+  .contenedor-separador__final{
+    margin-top:10%;
+  }
 }
