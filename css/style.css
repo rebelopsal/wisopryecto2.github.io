@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Italiana&family=Parisienne&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*Inicio */
+
+/*Header*/
+header {
+  background-image: url(../img/pexels-misha-voguel-7536224.jpg);
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: 100%;
+  z-index: -1;
+}
+.contenedor-header {
+  display: block;
+}
+
+.logo {
+  padding: 10px;
+  top: 0;
+}
+
+.logo h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
+.contenedor-menu {
+  top: 0%;
+}
+
+.contenedor-cabeza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.103);
+}
+
+.contenedor-menu__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 15px;
+}
+
+.contenedor-menu__ul a:hover{
+  color: aliceblue;
+}
+.contenedor-menu__ul a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 10px;
+  margin-top: 50px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu-secundario {
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.menu-secundario a {
+  margin-left: 20px;
+}
+
+.subtitulo {
+  padding-top: 350px;
+  padding-bottom: 100px;
+  display: block;
+  padding-left: 60px;
+  position: relative;
+}
+
+.subtitulo-h2__p p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  color: black;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.subtitulo-h2__p h2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2em;
+  color: black;
+  font-weight: 800;
+}
+
+.button {
+  border: none;
+  background: #3C3B3F;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#605C3C), to(#3C3B3F));
+  background: linear-gradient(to right, #605C3C, #3C3B3F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 30px;
+  width: 10%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Movimiento*/
+.object {
+  position: absolute;
+}
+.van {
+	left: 44%;
+}
+
+#axis:hover .move-right{
+	transform: translate(350px,0);
+	-webkit-transform: translate(350px,0); /** Chrome & Safari **/
+	-o-transform: translate(350px,0); /** Opera **/
+	-moz-transform: translate(350px,0); /** Firefox **/
+}
+.object {
+	position: absolute;
+	transition: all 2s ease-in-out;
+	-webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+	-moz-transition: all 2s ease-in-out; /** Firefox **/
+	-o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+/*Separador*/
+
+.contenedor-separador__1 {
+  width: 100%;
+  padding-top: 5%;
+}
+
+.contenedor-separador__2 {
+  width: 100%;
+  padding-top: 5%;
+}
+
+.parrafo {
+  height: 0;
+  text-align: center;
+}
+
+.parrafo p {
+  font-family: 'Parisienne', cursive;
+  color: black;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.parrafo::after {
+  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+  color: darkgoldenrod;
+}
+
+.parrafo::before {
+  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+  color: darkgoldenrod;
+}
+
+.contenedor-separador__final {
+  padding-top: 25%;
+}
+/*Portafolio info*/
+main {
+  padding-top: 5%;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-porta {
+  display: block;
+  margin: 50px;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3fr)[3];
+      grid-template-columns: repeat(3, 3fr);
+  gap: 10px;
+}
+
+.imagenes-porta {
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.imagenes-porta img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+/*info about*/
+.parrafo-informacion {
+  padding-top: 5%;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+
+.informacion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50%;
+      grid-template-columns: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.informacion:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.informacion h2 {
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #030303;
+  font-weight: 500;
+}
+
+.informacion p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+}
+
+.contenedor-informacion2 {
+  padding-top: 5%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.imagenes-informacion2 img {
+  width: 70%;
+  padding-left: 15%;
+  border-radius: 20px;
+}
+
+.informacion2 {
+  height: 50%;
+  margin-top: 25%;
+  margin-right: 5%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.informacion2:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.informacion2 h2 {
+  color: black;
+  font-size: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.informacion2 p {
+  padding: 20px;
+  font-size: 1em;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Contacto*/
+.contenedor-contactanos {
+  padding-top: 5%;
+}
+
+video {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contactanos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  padding-top: 10%;
+}
+
+label {
+  font-size: 2em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #3a4591;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+
+label:hover {
+  -webkit-text-decoration: underline #d471ae;
+          text-decoration: underline #d471ae;
+}
+
+input {
+  width: 55%;
+  height: 10%;
+  margin-bottom: 10px;
+  border: none;
+  background-color: rgba(70, 40, 117, 0.404);
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+
+input:hover {
+  background: #eeaeca;
+  background: linear-gradient(171deg, #eeaeca 0%, rgba(33, 4, 88, 0.644993) 100%);
+}
+
+textarea {
+  resize: none;
+  width: 55%;
+  height: 20%;
+  color: beige;
+  background-color: rgba(61, 34, 95, 0.356);
+  border: none;
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+
+textarea:hover {
+  background: #eeaeca;
+  background: linear-gradient(171deg, #eeaeca 0%, rgba(33, 4, 88, 0.644993) 100%);
+}
+/*Si se mantiene el boton hace un pequeña animacion*/
+.boton-enviar {
+  padding-left: 40%;
+}
+
+.boton {
+  display: inline-block;
+    text-align: center;
+    background: rgba(78, 18, 102, 0.623);
+    color: black;
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+}
+.boton::before,
+.boton::after{
+  width: 4.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: rgba(133, 26, 160, 0.651);
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: -1;
+}
+.boton::before{
+  top: -25%;
+  left: 20%;
+}
+.boton::after{
+  bottom: -25%;
+  right: 20%;
+}
+.boton:hover::before,
+.boton:hover::after{
+  -webkit-transform: none;
+            transform: none;
+}
+
+/*Footer*/
+.contenedor-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 5%;
+  margin: 10px;
+  padding-bottom: 2%;
+}
+
+.redes a {
+  margin: 10px;
+}
+
+.footer-final {
+  font-size: 20px;
+  color: black;
+}
+
+
+
+/*media scree*/
+@media screen and (max-width:1440px) {
+  .parrafo {
+    right: 50%;
+    text-align:center;
+  }
+  .parrafo::after {
+    content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+    color: darkgoldenrod;
+  }
+  
+  .parrafo::before {
+    content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+    color: darkgoldenrod;
+  }
+}
+
+@media all and (max-width: 850px)  {
+  header img {
+    background-size: 100%;
+    background-position: inherit;
+  }
+  .contenedor-footer {
+    bottom: 300px;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  label {
+    font-size: 1.50em;
+  }
+  .informacion p {
+    font-size: 0.9em;
+  }
+  .contenedor-informacion2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .informacion h2 {
+    font-size: 1.6em;
+  }
+  .informacion2 {
+    height: 85%;
+    margin-top: 30px;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .informacion2 h2 {
+    font-size: 1.5em;
+  }
+  .imagenes-informacion2 img {
+    width: 70%;
+    border-radius: 30px;
+  }
+  .parrafo {
+    text-align: center;
+  }
+  .contenedor-separador__1 {
+    padding-top: 0%;
+    padding-bottom: 4%;
+  }
+  .contenedor-separador__2 {
+    padding-top: 0%;
+    padding-bottom: 4%;
+  }
+  .parrafo::after,
+  .parrafo::before {
+    content: "~~~~~~~~~~";
+    color: gold;
+    margin: auto;
+  }
+  .contenedor-separador__final {
+    margin-top: 60%;
+  }
+  .subtitulo {
+    bottom: 150px;
+  }
+  .button {
+    width: 15%;
+  }
+  .object{
+    top: 46%;
+  }
+}
+@media screen and (max-width:820px){
+  .object{
+    top:46%;
+    margin-bottom: 7px;
+  }
+}
+@media  screen and (max-width:800px){
+  .object{
+    top:42%;
+  }
+  .contenedor-separador__final{
+    margin-top:70%;
+  }
+}
+@media all and (max-width: 670px) {
+  .parrafo::after,
+  .parrafo::before {
+    content: "~~~~~~~~~~";
+    color: goldenrod;
+  }
+  .contenedor-separador__1 {
+    top: 100%;
+    margin-top: -170px;
+  }
+  .contenedor-separador__2 {
+    top: 100%;
+  }
+}
+@media (max-width: 620px) {
+  header img {
+    background-size: 100%;
+    background-position: inherit;
+  }
+  .contenedor-menu__ul {
+    font-size: 0.7em;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .subtitulo {
+    bottom: 200px;
+  }
+  .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .object{
+    top: 41%;
+    width: 8%;
+  }
+
+}
+
+@media (max-width: 560px) {
+  header img {
+    background-size: cover;
+    background-position: inherit;
+  }
+  .contenedor-menu__ul {
+    font-size: 0.5em;
+  }
+  .logo h1{
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+  .menu-secundario img {
+    width: 20%;
+  }
+  .subtitulo-h2__p p {
+    font-size: 0.7em;
+  }
+  .subtitulo-h2__p h2 {
+    font-size: 1em;
+  }
+  .button {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width:480px) {
+  .logo h1{
+    font-size: 1,5rem;
+  }
+  .subtitulo-h2__p h2{
+    font-size: 0,5em;
+    color: #010311;
+  }
+  .subtitulo{
+    padding-top: 70%;
+  }
+  .button{
+    width: 150px;
+  }
+  .informacion{
+    font-size: 12px;
+  }
+  .informacion2{
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  .contactanos {
+    padding-bottom: 50%;
+  }
+  .imagenes-informacion2{
+    margin-top: 15px;
+  }
+  .contenedor-separador__final{
+    margin-top: 15%;
+  }
+  .object{
+    top: 40%;
+  }
+  .object img{
+    width: 15%;
+  }
+}
+@media screen and (max-width:428px){
+  .object{
+    top: 34%;
+    width: 13%;
+  }
+  .parrafo::after,
+  .parrafo::before {
+    content: "~~~~";
+    color: goldenrod;
+  }
+  .contenedor-separador__final{
+    margin-top:35%;
+  }
+}
+
+@media screen and (max-width:414px){
+  .contenedor-separador__2{
+    padding-bottom: 5px;
+  }
+  .parrafo {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  .parrafo::after,
+  .parrafo::before {
+    content: "~~~~~~";
+    color: goldenrod;
+  }
+  .contenedor-informacion2{
+    margin-top: 20px;
+  }
+  .object{
+    top: 32%;
+  }
+  .object img{
+    width: 15%;
+  }
+  .contenedor-separador__final{
+    margin-top:30%;
+  }
+}
+@media screen and (max-width:360px) {
+  .button{
+    width: 40%;
+  }
+  
+}
