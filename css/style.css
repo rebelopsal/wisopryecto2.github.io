@@ -556,6 +556,14 @@ textarea:hover {
     margin-top:40%;
   }
 }
+@media screen and (max-width:720px){
+  .object{
+    top:64%;
+  }
+  .contenedor-separador__final{
+    margin-top:20%;
+  }
+}
 @media all and (max-width: 670px) {
   .parrafo::after,
   .parrafo::before {
