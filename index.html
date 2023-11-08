@@ -24,6 +24,10 @@
                         <li><a href="#contacto">CONTACTO</a></li>
                         <li><a href="https://www.blogger.com/about/?hl=es">BLOG</a></li>
                     </ul>
+                    <button class="switch" id="switch">
+                        <span><img src="./icon/sol.png" alt=""></span>
+                        <span><img src="./icon/media-luna.png" alt=""></span>
+                    </button>
                 </nav>
             <div class="menu-secundario ">
                     <a href="#"><img src="./icon/002-lupa.png" alt=""></a>
@@ -113,18 +117,18 @@
             <source src="./img/pexels-ivan-khmelyuk-8642288.mp4" type="">
         </video>
         <div class="contactanos">
-            <form >
-                <label for="name">Nombre:</label>
-                <input type="text" name="name" >
+            <form id="form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="name">
                 <br>
-                <label for="email">Email:</label>
-                <input type="text" name="email"  id="">
+                <label for=" email">Email:</label>
+                <input type="text" name="email"  id="email">
                 <br>
                 <label for="asunto">Asunto:</label>
-                <textarea name="asunto" id="" cols="30" rows="10"></textarea>
+                <textarea name="asunto" id="asunto" cols="30" rows="10"></textarea>
                 <br>
                 <label for="tarea">Escribenos:</label>
-                <textarea name="tarea"  id="" cols="30" rows="10"></textarea>
+                <textarea name="tarea"  id=" tarea" cols="30" rows="10"></textarea>
             </form>
         </div>
         <div class="boton-enviar">
@@ -144,5 +148,6 @@
             <p>©copyright 2021</p>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
