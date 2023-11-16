@@ -11,36 +11,40 @@
     <title>Photograpy</title>
 </head>
 <body>
-    <header class="contenedor-header">
-        <div class="contenedor-cabeza">
-            <div class="logo">
-                <h1>Wiso</h1>
-            </div>
-                <nav class="contenedor-menu">
-                    <ul class="contenedor-menu__ul">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#portafolio">PORTAFOLIO</a></li>
-                        <li><a href="#about">ABOUT ME</a></li>
-                        <li><a href="#contacto">CONTACTO</a></li>
-                        <li><a href="https://www.blogger.com/about/?hl=es">BLOG</a></li>
-                    </ul>
+    <header>
+        <nav>
+            <a href="#">
+                <h1 class='logo'>Wiso</h1>
+            </a>
+            <ul class="enlaces-menu">
+                <li>
                     <button class="switch" id="switch">
-                        <span><img src="./icon/sol.png" alt=""></span>
-                        <span><img src="./icon/media-luna.png" alt=""></span>
-                    </button>
-                </nav>
-            <div class="menu-secundario ">
-                    <a href="#"><img src="./icon/002-lupa.png" alt=""></a>
-                    <a href="#"><img src="./icon/001-menu-abierto.png" alt=""></a>
-            </div>
-        </div>
+                    <span><img src="./icon/sol.png" alt=""></span>
+                    <span><img src="./icon/media-luna.png" alt=""></span>
+                </button>
+                </li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#portafolio">PORTAFOLIO</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="https://www.blogger.com/about/?hl=es">BLOG</a>
+                </li>
+            </ul>
+            <button class="btn" type="button">
+                <span class="linea-1"></span>
+                <span class="linea-2"></span>
+                <span class="linea-3"></span>
+            </button>
+        </nav>
+        <div class="mate">
             <div class="subtitulo">
                 <div class="subtitulo-h2__p">
                     <p>Fashion Photography</p>
                     <h2>IMPRESSURE</h2>
                 </div>
-                <button class="button">VIEW PORTFOLIO</button>
+                <a class="porta">VIEW PORTFOLIO</a>
             </div>
+        </div>
     </header>
     <div id="axis" class="one">
         <img class="object van move-right" src="./icon/canon_eos_digital_rebel_xt_camera_19613 (1).png"/>
@@ -96,6 +100,117 @@
                 </div>
             </div>
         </div>
+        <div class="body-carrucell">
+            <div id="wrapper">
+                <div id="carousel">
+                  <div id="content">
+                    <img
+                      class="item"
+                      src="./img/pexels-adrien-olichon-18528201.jpg"
+                    />
+                    <img
+                      src="./img/pexels-dziana-hasanbekava-7626571.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-eriks-cistovs-8806013.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-esrageziyor-8478908.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-fedoskamcha-6501502.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-guney-ozgur-9829570.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-inga-seliverstova-9360504.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-işıl-18792337.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="img/pexels-larissa-farber-9789257.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-morteza-ghanbari-19065036.jpg"
+                      class="item"
+                    />
+                    <img
+                      class="item"
+                      src="./img/pexels-sasha-prasastika-9304472.jpg"
+                    />
+                    <img
+                      src="./img/pexels-andre-moura-2635817.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-mathilde-langevin-11719114.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-alina-chernii-19115702.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-tuba-karabulut-18074010.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-thanh-luu-19057523.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-paul-jousseau-15835031.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-lap-dinh-quoc-18369347.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-lillyfeephotography-linda-ohde-18819309.jpg"
+                      class="item"
+                    />
+                    <img
+                      src="./img/pexels-ioana-motoc-10674610.jpg"
+                      class="item"
+                    />
+                  </div>
+                </div>
+                <button id="prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                  </svg>
+                </button>
+                <button id="next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                  </svg>
+                </button>
+              </div>
+        </div>
+        
     </main>
     <div class="contenedor-separador" id="about">
         <h2 class="parrafo">About me</h2>
@@ -117,22 +232,22 @@
             <source src="./img/pexels-ivan-khmelyuk-8642288.mp4" type="">
         </video>
         <div class="contactanos">
-            <form id="form">
+            <form id="miFormulario">
                 <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="name">
+                <input class="input" type="text" id="nombre" name="nombre" placeholder="Juan..." required>
                 <br>
-                <label for=" email">Email:</label>
-                <input type="text" name="email"  id="email">
+                <label for="email">Email:</label>
+                <input class="input" type="email" id="email" name="email" placeholder="carlito@gmail.com.." required>
                 <br>
                 <label for="asunto">Asunto:</label>
-                <textarea name="asunto" id="asunto" cols="30" rows="10"></textarea>
+                <input class="input" type="text" id="asunto" name="asunto" required>
                 <br>
-                <label for="tarea">Escribenos:</label>
-                <textarea name="tarea"  id=" tarea" cols="30" rows="10"></textarea>
             </form>
-        </div>
-        <div class="boton-enviar">
-            <button class="boton">Enviar</button>
+            <div class="boton-enviar">
+                <button class="boton">
+                    <input class="in-bnt" type="submit" value="Enviar" disabled>
+                </button>
+            </div>
         </div>
     </div>
     <div class="contenedor-separador__final">
