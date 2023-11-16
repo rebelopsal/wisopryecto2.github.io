@@ -683,6 +683,10 @@ label :hover {
 
 
 /*Footer*/
+
+.contenedor-separador__final{
+  margin-top:20px;
+}
 .contenedor-footer {
   display: -webkit-box;
   display: -ms-flexbox;
